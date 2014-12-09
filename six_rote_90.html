@@ -13,7 +13,7 @@
 
 	body {
 		font-size: 12px;
-		background-color: #DDD;
+		background-color: white;
 		min-width: 1200px;
 	}
 
@@ -27,22 +27,38 @@
 
 	.box {
 		position: relative;
-		width: 630px;
+		width: 1030px;
 		margin: 100px auto;
 	}
 
-	.lineF, .lineS ,.linep {
+	.line1, .line2 ,.line3 ,.line4,.line5,.line6,.pingwei{
 		position: absolute;
 		/*visibility: yes;*/
 	}
-
-	.lineS {
-		top: 182px;
-		left: 105px;
+	.line1 {
+		top: 300px;
+		left: 280px;
 	}
-	.linep {
-		top: 185px;
-		left: -105px;
+	.line2 {
+		top: 195px;
+		left: 465px;
+		
+	}
+	.line3 {
+		top: 405px;
+		left: 465px;
+	}
+	.line4 {
+		top: 90px;
+		left: 650px;
+	}
+	.line5 {
+		top: 300px;
+		left: 650px;
+	}
+	.line6 {
+		top: 195px;
+		left: 835px;
 	}
 	.boxF, .boxS, .boxT, .overlay {
 		width: 200px;
@@ -59,11 +75,12 @@
 		float: left;
 		margin-left: 10px;
 		-ms-transform: rotate(120deg);
-		-moz-transform: rotate(120deg);
-		-webkit-transform: rotate(120deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
 	}
 
 	.boxS {
+
 		transform: rotate(-60deg);
 		-ms-transform: rotate(-60deg);
 		-moz-transform: rotate(-60deg);
@@ -71,6 +88,7 @@
 	}
 
 	.boxT {
+		
 		transform: rotate(-60deg);
 		background: no-repeat 50% center;
 		background-size: 125%
@@ -79,10 +97,11 @@
 		-moz-transform: rotate(-60deg);
 		-webkit-transform: rotate(-60deg);
 		visibility: visible;
-		background-image: url(http://builtbybuffalo.com/uploads/work/300/889794123.jpg);
+		background-image: url(touxiangNew.png);
 	}
 
 	.overlay {
+
 		transition: all 250ms
 				ease-in-out 0s;
 		display: block;
@@ -117,15 +136,16 @@
 	}
 	*/
 	.overlay .detail{
+		-moz-transform: rotate(30deg);
 		display: inline-block;
 		position: absolute;
 		width: 200px;
-		height: 70px;
+		height: 80px;
 		left: 0%;
 		top: 52%;
-		margin: 50px 0 0 -36px;
-		padding-top: 20px;
-		padding-left: 35px;
+		margin: 50px 0 0 -56px;
+		padding-top: 5px;
+		padding-left: -20px;
 		border-radius: 3px;
 		background-color:  rgba(0,0,0,0.6);
 		text-align: center;
@@ -137,90 +157,101 @@
 		font-size: 22px;
 		font-weight: bolder;
 	}
+	.pingwei{
+		background-image: url(pingwei.png);
+		height: 185px;
+		width: 117px;
+		top: 100px;
+		left: 350px;
+	}
 </style>
 	</head>
 	<body>
+	<div class='pingwei'></div>
 		<div class="box">
-			<!--第一行(lineFirst)-->
-			<div class="lineF">
+			<!--第一行-->
+			<div class="line1">
 				<div class="boxF">
 					<div class="boxS">
 						<div class="boxT" >
 							<div class="overlay">
-								<!--<a href="#">+</a> -->	
-								<div class ='detail'>张老师</div>
+								<!--<a href="#">+</a> 	-->
+								<div class ='detail'>张老师1</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="boxF">
-					<div class="boxS">
-						<div class="boxT" >
-							<div class="overlay">
-							<!--<a href="#">+</a> -->	
-							<div class ='detail'>张老师</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="boxF">
-					<div class="boxS">
-						<div class="boxT" >
-							<div class="overlay">
-								<!--<a href="#">+</a> -->	
-								<div class ='detail'>张老师</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
-			<!--第二行(lineSecond)-->
-			<div class="lineS">
+			<!--第二行-->
+			<div class="line2">
 
 				<div class="boxF">
 					<div class="boxS">
 						<div class="boxT" >
 							<div class="overlay">
-								<!--<a href="#">+</a> -->	
-								<div class ='detail'>张老师</div>
+								<!--<a href="#">+</a>	-->
+								<div class ='detail'>张老师2</div> 
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="boxF">
-					<div class="boxS">
-						<div class="boxT" >
-							<div class="overlay">
-								<!--<a href="#">+</a> -->	
-								<div class ='detail'>张老师</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
-
 			<!-- 第三行 -->
-		<div class="linep">
-
+			<div class="line3">
 				<div class="boxF">
 					<div class="boxS">
 						<div class="boxT" >
 							<div class="overlay">
-								<!--<a href="#">+</a> -->	
-								<div class ='detail'>张老师</div>
+								<!--<a href="#">+</a>-->
+								<div class ='detail'>张老师3</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-			
-
 			</div>
+			<!-- 第4行 -->
+			<div class="line4">
+				<div class="boxF">
+					<div class="boxS">
+						<div class="boxT" >
+							<div class="overlay">
+								<!--<a href="#">+</a>-->
+								<div class ='detail'>张老师4</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第5行 -->
+			<div class="line5">
+				<div class="boxF">
+					<div class="boxS">
+						<div class="boxT" >
+							<div class="overlay">
+								<!--<a href="#">+</a>-->
+								<div class ='detail'>张老师5</div>
+								
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第6行 -->
+			<div class="line6">
+				<div class="boxF">
+					<div class="boxS">
+						<div class="boxT" >
+							<div class="overlay">
+								<!--<a href="#">+</a>-->
+								<div class ='detail'>张老师6</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 
 	</body>
