@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 		<title>
 			六边形
 		</title>
@@ -33,7 +34,7 @@
 
 	.line1, .line2 ,.line3 ,.line4,.line5,.line6,.pingwei{
 		position: absolute;
-		/*visibility: yes;*/
+		visibility: yes;
 	}
 	.line1 {
 		top: 300px;
@@ -135,7 +136,7 @@
 		font-weight: bolder;
 	}
 	*/
-	.overlay .detail{
+	.overlay .detail_name{
 		-moz-transform: rotate(30deg);
 		display: inline-block;
 		position: absolute;
@@ -157,6 +158,27 @@
 		font-size: 22px;
 		font-weight: bolder;
 	}
+		.overlay .detail{
+		-moz-transform: rotate(30deg);
+		/*display: inline-block;*/
+		display: none;
+		position: absolute;
+		width: 200px;
+		height: 80px;
+		left: 0%;
+		top: 0%;
+		margin: 50px 0 0 -56px;
+		padding-top: 5px;
+		padding-left: 60px;
+		border-radius: 3px;
+		/*background-color:  rgba(0,0,0,0.6);*/
+		text-align: center;
+		line-height: 20px;
+		text-decoration: none;
+		color: white;
+		font-size: 12px;
+		font-weight: bolder;
+	}
 	.pingwei{
 		background-image: url(pingwei.png);
 		height: 185px;
@@ -176,7 +198,13 @@
 						<div class="boxT" >
 							<div class="overlay">
 								<!--<a href="#">+</a> 	-->
-								<div class ='detail'>张老师1</div>
+								<div class ='detail_name'>张老师1</div>
+								<div class = 'detail'>	
+									1.关于老师的详细信息<br>
+									2.关于老师的详细信息<br>
+									3.关于老师的详细信息<br>
+									4.关于老师的详细信息<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -190,7 +218,13 @@
 						<div class="boxT" >
 							<div class="overlay">
 								<!--<a href="#">+</a>	-->
-								<div class ='detail'>张老师2</div> 
+								<div class ='detail_name'>张老师2</div> 
+								<div class = 'detail'>	
+									1.关于老师的详细信息<br>
+									2.关于老师的详细信息<br>
+									3.关于老师的详细信息<br>
+									4.关于老师的详细信息<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -203,7 +237,13 @@
 						<div class="boxT" >
 							<div class="overlay">
 								<!--<a href="#">+</a>-->
-								<div class ='detail'>张老师3</div>
+								<div class ='detail_name'>张老师3</div>
+								<div class = 'detail'>	
+									1.关于老师的详细信息<br>
+									2.关于老师的详细信息<br>
+									3.关于老师的详细信息<br>
+									4.关于老师的详细信息<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -216,7 +256,13 @@
 						<div class="boxT" >
 							<div class="overlay">
 								<!--<a href="#">+</a>-->
-								<div class ='detail'>张老师4</div>
+								<div class ='detail_name'>张老师4</div>
+								<div class = 'detail'>	
+									1.关于老师的详细信息<br>
+									2.关于老师的详细信息<br>
+									3.关于老师的详细信息<br>
+									4.关于老师的详细信息<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -229,9 +275,13 @@
 						<div class="boxT" >
 							<div class="overlay">
 								<!--<a href="#">+</a>-->
-								<div class ='detail'>张老师5</div>
-								
-
+								<div class ='detail_name'>张老师5</div>
+								<div class = 'detail'>	
+									1.关于老师的详细信息<br>
+									2.关于老师的详细信息<br>
+									3.关于老师的详细信息<br>
+									4.关于老师的详细信息<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -244,7 +294,13 @@
 						<div class="boxT" >
 							<div class="overlay">
 								<!--<a href="#">+</a>-->
-								<div class ='detail'>张老师6</div>
+								<div class ='detail_name'>张老师6</div>
+								<div class = 'detail'>	
+									1.关于老师的详细信息<br>
+									2.关于老师的详细信息<br>
+									3.关于老师的详细信息<br>
+									4.关于老师的详细信息<br>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -255,5 +311,14 @@
 		</div>
 
 	</body>
-
+<script type="text/javascript">
+ 	$('.overlay').mouseover(function(){
+		//显示详细信息
+		 $(this).children('.detail').show(); 
+	});
+	$('.overlay').mouseout(function(){
+		//隐藏详细信息
+		 $(this).children('.detail').hide(); 
+	});
+</script>
 </html>
